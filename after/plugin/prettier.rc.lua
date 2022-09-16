@@ -1,16 +1,19 @@
-local status, prettier = pcall(require, 'prettier')
-if (not status) then return end
+local prettier = require("prettier")
 
-prettier.setup {
-  bin = 'prettierd',
+prettier.setup({
+  bin = 'prettierd', -- or `'prettierd'` (v0.22+)
   filetypes = {
-    'css',
-    'javascript',
-    'javascriptreact',
-    'typescript',
-    'typescriptreact',
-    'json',
-    'scss',
-    'less',
-  }
-}
+    "css",
+    "graphql",
+    "html",
+    "javascript",
+    "javascriptreact",
+    "json",
+    "less",
+    "markdown",
+    "scss",
+    "typescript",
+    "typescriptreact",
+    "yaml",
+  },
+})

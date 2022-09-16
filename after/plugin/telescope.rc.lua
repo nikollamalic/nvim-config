@@ -1,5 +1,5 @@
 local status, telescope = pcall(require, 'telescope')
-if not(status) then return end
+if not (status) then return end
 
 local actions = require('telescope.actions')
 
@@ -28,7 +28,7 @@ telescope.setup {
           ['n'] = {
             ['N'] = fb_actions.create,
             ['h'] = fb_actions.goto_parent_dir,
-            ['/'] = function () vim.cmd('startinsert') end,
+            ['/'] = function() vim.cmd('startinsert') end,
           }
         }
       }
@@ -49,11 +49,11 @@ vim.keymap.set('n', '\\\\', '<cmd>' .. telescope_module .. '.buffers()<cr>', opt
 
 vim.keymap.set('n', ';t', '<cmd>' .. telescope_module .. '.help_tags()<cr>', opts)
 
-vim.keymap.set('n', ';;', '<cmd>' ..telescope_module .. '.resume()<cr>', opts)
+vim.keymap.set('n', ';;', '<cmd>' .. telescope_module .. '.resume()<cr>', opts)
 
-vim.keymap.set('n', ';e', '<cmd>' ..telescope_module.. '.diagnostics()<cr>', opts)
+vim.keymap.set('n', ';e', '<cmd>' .. telescope_module .. '.diagnostics()<cr>', opts)
 
 local file_browser_options = '{ path = "%:p:h", cwd = telescope_buffer_dir(), respect_git_ignore = false, hidden = true, grouped = true, previewer = false, initial_mode = "normal", layout_config = { height = 40 }}'
 
-vim.keymap.set('n', 'sf', '<cmd>lua require("telescope").extensions.file_browser.file_browser(' ..file_browser_options.. ')<cr>', opts)
-
+vim.keymap.set('n', 'sf',
+  '<cmd>lua require("telescope").extensions.file_browser.file_browser(' .. file_browser_options .. ')<cr>', opts)

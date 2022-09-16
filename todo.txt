@@ -1,0 +1,4 @@
+- List of stuff to do for Neovim
+
+Preview window for references is not working
+I have managed to open it at some point but it fails to work
