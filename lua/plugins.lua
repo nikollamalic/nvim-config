@@ -34,6 +34,9 @@ packer.startup(function(use)
   use 'williamboman/mason.nvim'
   use 'williamboman/mason-lspconfig.nvim'
 
+  -- LSP UI
+  use 'glepnir/lspsaga.nvim'
+
   -- Helpers and linters
   use 'jose-elias-alvarez/null-ls.nvim'
   use('MunifTanjim/prettier.nvim')
