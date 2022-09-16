@@ -5,6 +5,7 @@ if (not status) then return end
 local on_attach = function(client, bufnr)
   if client.name == "tsserver" then
     client.resolved_capabilities.document_formatting = false
+    return
   end
 
   if client.server_capabilities.documentFormattingProvider then

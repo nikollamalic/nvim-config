@@ -1,5 +1,5 @@
 local current_theme = "gruvbox-material";
-local variant = "light"
+local variant = "dark"
 
 vim.o.background = variant
 vim.o.termguicolors = true
