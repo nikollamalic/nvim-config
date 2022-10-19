@@ -9,10 +9,10 @@ local keymap = vim.keymap.set
 keymap("n", "gh", "<cmd>Lspsaga lsp_finder<CR>", { silent = true })
 
 -- Code action
-keymap({"n","v"}, ",", "<cmd>Lspsaga code_action<CR>", { silent = true })
+keymap({ "n", "v" }, ",", "<cmd>Lspsaga code_action<CR>", { silent = true })
 
 -- Rename
-keymap("n", "gr", "<cmd>Lspsaga rename<CR>", { silent = true })
+keymap("n", "gr", "<cmd>Lspsaga rename<CR>", { noremap = true, silent = true })
 
 -- Peek Definition
 -- you can edit the definition file in this flaotwindow
@@ -39,7 +39,7 @@ keymap("n", "]E", function()
 end, { silent = true })
 
 -- Outline
-keymap("n","<leader>o", "<cmd>LSoutlineToggle<CR>",{ silent = true })
+keymap("n", "<leader>o", "<cmd>LSoutlineToggle<CR>", { silent = true })
 
 -- Hover Doc
 keymap("n", "K", "<cmd>Lspsaga hover_doc<CR>", { silent = true })

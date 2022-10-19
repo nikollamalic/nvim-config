@@ -22,7 +22,13 @@ packer.startup(function(use)
   use 'nvim-telescope/telescope-file-browser.nvim' -- File finder and grep util
   use 'kyazdani42/nvim-web-devicons' -- File icons
   use 'lewis6991/gitsigns.nvim' -- Git helper
+
   use 'sainnhe/everforest'
+  use 'andreasvc/vim-256noir'
+  use 'doums/darcula'
+  use 'yorickpeterse/vim-paper'
+  use 'jsit/toast.vim'
+  use 'crusoexia/vim-monokai'
 
   -- LSP related config
   use 'neovim/nvim-lspconfig' -- LSP
@@ -33,6 +39,7 @@ packer.startup(function(use)
   use 'L3MON4D3/LuaSnip' -- Snippet
   use 'williamboman/mason.nvim'
   use 'williamboman/mason-lspconfig.nvim'
+  use 'ray-x/lsp_signature.nvim'
 
   -- LSP UI
   use 'glepnir/lspsaga.nvim'

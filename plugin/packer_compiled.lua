@@ -89,6 +89,11 @@ _G.packer_plugins = {
     path = "/Users/nikolamalic/.local/share/nvim/site/pack/packer/start/cmp-nvim-lsp",
     url = "https://github.com/hrsh7th/cmp-nvim-lsp"
   },
+  darcula = {
+    loaded = true,
+    path = "/Users/nikolamalic/.local/share/nvim/site/pack/packer/start/darcula",
+    url = "https://github.com/doums/darcula"
+  },
   everforest = {
     loaded = true,
     path = "/Users/nikolamalic/.local/share/nvim/site/pack/packer/start/everforest",
@@ -103,6 +108,11 @@ _G.packer_plugins = {
     loaded = true,
     path = "/Users/nikolamalic/.local/share/nvim/site/pack/packer/start/gruvbox-material",
     url = "https://github.com/sainnhe/gruvbox-material"
+  },
+  ["lsp_signature.nvim"] = {
+    loaded = true,
+    path = "/Users/nikolamalic/.local/share/nvim/site/pack/packer/start/lsp_signature.nvim",
+    url = "https://github.com/ray-x/lsp_signature.nvim"
   },
   ["lspkind-nvim"] = {
     loaded = true,
@@ -189,10 +199,25 @@ _G.packer_plugins = {
     path = "/Users/nikolamalic/.local/share/nvim/site/pack/packer/start/telescope.nvim",
     url = "https://github.com/nvim-telescope/telescope.nvim"
   },
+  ["toast.vim"] = {
+    loaded = true,
+    path = "/Users/nikolamalic/.local/share/nvim/site/pack/packer/start/toast.vim",
+    url = "https://github.com/jsit/toast.vim"
+  },
   ["tokyonight.nvim"] = {
     loaded = true,
     path = "/Users/nikolamalic/.local/share/nvim/site/pack/packer/start/tokyonight.nvim",
     url = "https://github.com/folke/tokyonight.nvim"
+  },
+  ["vim-256noir"] = {
+    loaded = true,
+    path = "/Users/nikolamalic/.local/share/nvim/site/pack/packer/start/vim-256noir",
+    url = "https://github.com/andreasvc/vim-256noir"
+  },
+  ["vim-paper"] = {
+    loaded = true,
+    path = "/Users/nikolamalic/.local/share/nvim/site/pack/packer/start/vim-paper",
+    url = "https://github.com/yorickpeterse/vim-paper"
   }
 }
 
