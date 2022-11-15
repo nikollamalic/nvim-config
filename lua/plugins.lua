@@ -23,12 +23,13 @@ packer.startup(function(use)
   use 'kyazdani42/nvim-web-devicons' -- File icons
   use 'lewis6991/gitsigns.nvim' -- Git helper
 
-  use 'sainnhe/everforest'
-  use 'andreasvc/vim-256noir'
   use 'doums/darcula'
-  use 'yorickpeterse/vim-paper'
-  use 'jsit/toast.vim'
-  use 'crusoexia/vim-monokai'
+  use 'tjdevries/colorbuddy.nvim'
+  use 'svrana/neosolarized.nvim'
+  use "EdenEast/nightfox.nvim"
+
+  -- Theme switcher
+  use 'f-person/auto-dark-mode.nvim'
 
   -- LSP related config
   use 'neovim/nvim-lspconfig' -- LSP
@@ -47,4 +48,10 @@ packer.startup(function(use)
   -- Helpers and linters
   use 'jose-elias-alvarez/null-ls.nvim'
   use('MunifTanjim/prettier.nvim')
+
+  -- Zen mode
+  use 'folke/zen-mode.nvim'
+
+  -- Colorizer
+  use 'norcalli/nvim-colorizer.lua'
 end)

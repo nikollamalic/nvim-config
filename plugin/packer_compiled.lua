@@ -89,15 +89,15 @@ _G.packer_plugins = {
     path = "/Users/nikolamalic/.local/share/nvim/site/pack/packer/start/cmp-nvim-lsp",
     url = "https://github.com/hrsh7th/cmp-nvim-lsp"
   },
+  ["colorbuddy.nvim"] = {
+    loaded = true,
+    path = "/Users/nikolamalic/.local/share/nvim/site/pack/packer/start/colorbuddy.nvim",
+    url = "https://github.com/tjdevries/colorbuddy.nvim"
+  },
   darcula = {
     loaded = true,
     path = "/Users/nikolamalic/.local/share/nvim/site/pack/packer/start/darcula",
     url = "https://github.com/doums/darcula"
-  },
-  everforest = {
-    loaded = true,
-    path = "/Users/nikolamalic/.local/share/nvim/site/pack/packer/start/everforest",
-    url = "https://github.com/sainnhe/everforest"
   },
   ["gitsigns.nvim"] = {
     loaded = true,
@@ -139,6 +139,16 @@ _G.packer_plugins = {
     path = "/Users/nikolamalic/.local/share/nvim/site/pack/packer/start/mason.nvim",
     url = "https://github.com/williamboman/mason.nvim"
   },
+  ["neosolarized.nvim"] = {
+    loaded = true,
+    path = "/Users/nikolamalic/.local/share/nvim/site/pack/packer/start/neosolarized.nvim",
+    url = "https://github.com/svrana/neosolarized.nvim"
+  },
+  ["nightfox.nvim"] = {
+    loaded = true,
+    path = "/Users/nikolamalic/.local/share/nvim/site/pack/packer/start/nightfox.nvim",
+    url = "https://github.com/EdenEast/nightfox.nvim"
+  },
   ["null-ls.nvim"] = {
     loaded = true,
     path = "/Users/nikolamalic/.local/share/nvim/site/pack/packer/start/null-ls.nvim",
@@ -153,6 +163,11 @@ _G.packer_plugins = {
     loaded = true,
     path = "/Users/nikolamalic/.local/share/nvim/site/pack/packer/start/nvim-cmp",
     url = "https://github.com/hrsh7th/nvim-cmp"
+  },
+  ["nvim-colorizer.lua"] = {
+    loaded = true,
+    path = "/Users/nikolamalic/.local/share/nvim/site/pack/packer/start/nvim-colorizer.lua",
+    url = "https://github.com/norcalli/nvim-colorizer.lua"
   },
   ["nvim-lspconfig"] = {
     loaded = true,
@@ -199,25 +214,15 @@ _G.packer_plugins = {
     path = "/Users/nikolamalic/.local/share/nvim/site/pack/packer/start/telescope.nvim",
     url = "https://github.com/nvim-telescope/telescope.nvim"
   },
-  ["toast.vim"] = {
-    loaded = true,
-    path = "/Users/nikolamalic/.local/share/nvim/site/pack/packer/start/toast.vim",
-    url = "https://github.com/jsit/toast.vim"
-  },
   ["tokyonight.nvim"] = {
     loaded = true,
     path = "/Users/nikolamalic/.local/share/nvim/site/pack/packer/start/tokyonight.nvim",
     url = "https://github.com/folke/tokyonight.nvim"
   },
-  ["vim-256noir"] = {
+  ["zen-mode.nvim"] = {
     loaded = true,
-    path = "/Users/nikolamalic/.local/share/nvim/site/pack/packer/start/vim-256noir",
-    url = "https://github.com/andreasvc/vim-256noir"
-  },
-  ["vim-paper"] = {
-    loaded = true,
-    path = "/Users/nikolamalic/.local/share/nvim/site/pack/packer/start/vim-paper",
-    url = "https://github.com/yorickpeterse/vim-paper"
+    path = "/Users/nikolamalic/.local/share/nvim/site/pack/packer/start/zen-mode.nvim",
+    url = "https://github.com/folke/zen-mode.nvim"
   }
 }
 

@@ -4,15 +4,15 @@ if (not status) then return end
 
 local on_attach = function(client, bufnr)
   if client.name == "tsserver" then
-    client.resolved_capabilities.document_formatting = false
+    client.server_capabilities.document_formatting = false
     return
   end
 
   if client.server_capabilities.documentFormattingProvider then
-    vim.cmd("nnoremap <silent><buffer> <Leader>f :lua vim.lsp.buf.formatting()<CR>")
+    vim.cmd("nnoremap <silent><buffer> <Leader>f :lua vim.lsp.buf.format()<CR>")
 
     -- format on save
-    vim.cmd("autocmd BufWritePost <buffer> lua vim.lsp.buf.formatting()")
+    vim.cmd("autocmd BufWritePost <buffer> lua vim.lsp.buf.format()")
   end
 
   if client.server_capabilities.documentRangeFormattingProvider then
