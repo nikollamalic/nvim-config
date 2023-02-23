@@ -30,7 +30,19 @@ nvim_lsp.pyright.setup({
   on_attach = on_attach,
 })
 
-nvim_lsp.sumneko_lua.setup {
+nvim_lsp.solang.setup({
+  on_attach = on_attach,
+})
+
+nvim_lsp.solidity.setup({
+  on_attach = on_attach,
+  settings = {
+    -- example of global remapping
+    solidity = { includePath = '', remapping = { ["@OpenZeppelin/"] = 'OpenZeppelin/openzeppelin-contracts@4.6.0/' } }
+  },
+})
+
+nvim_lsp.lua_ls.setup {
   on_attach = on_attach,
   settings = {
     Lua = {

@@ -12,6 +12,8 @@ local set_light_mode = function()
   -- vim.cmd [[colorscheme dawnfox]]
 end
 
+-- vim.cmd [[colorscheme darcula]]
+
 theme_switcher.setup({
   set_dark_mode = set_dark_mode,
   set_light_mode = set_light_mode

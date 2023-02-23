@@ -79,6 +79,11 @@ _G.packer_plugins = {
     path = "/Users/nikolamalic/.local/share/nvim/site/pack/packer/start/LuaSnip",
     url = "https://github.com/L3MON4D3/LuaSnip"
   },
+  ["auto-dark-mode.nvim"] = {
+    loaded = true,
+    path = "/Users/nikolamalic/.local/share/nvim/site/pack/packer/start/auto-dark-mode.nvim",
+    url = "https://github.com/f-person/auto-dark-mode.nvim"
+  },
   ["cmp-buffer"] = {
     loaded = true,
     path = "/Users/nikolamalic/.local/share/nvim/site/pack/packer/start/cmp-buffer",
@@ -128,6 +133,11 @@ _G.packer_plugins = {
     loaded = true,
     path = "/Users/nikolamalic/.local/share/nvim/site/pack/packer/start/lualine.nvim",
     url = "https://github.com/nvim-lualine/lualine.nvim"
+  },
+  ["markdown-preview.nvim"] = {
+    loaded = true,
+    path = "/Users/nikolamalic/.local/share/nvim/site/pack/packer/start/markdown-preview.nvim",
+    url = "https://github.com/iamcco/markdown-preview.nvim"
   },
   ["mason-lspconfig.nvim"] = {
     loaded = true,

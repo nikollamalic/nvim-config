@@ -49,6 +49,11 @@ packer.startup(function(use)
   use 'jose-elias-alvarez/null-ls.nvim'
   use('MunifTanjim/prettier.nvim')
 
+  use({
+      "iamcco/markdown-preview.nvim",
+      run = function() vim.fn["mkdp#util#install"]() end,
+  })
+
   -- Zen mode
   use 'folke/zen-mode.nvim'
 
