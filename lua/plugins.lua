@@ -12,7 +12,6 @@ packer.startup(function(use)
   use 'windwp/nvim-autopairs' -- Autoclosing HTML tags
   use 'windwp/nvim-ts-autotag' -- Auto-update of HTML tags
   use 'folke/tokyonight.nvim' -- Color scheme Purplish
-  use 'sainnhe/gruvbox-material' -- Color scheme
   use {
     'nvim-treesitter/nvim-treesitter', -- File explorer
     run = ":TSUpdate"
@@ -20,15 +19,12 @@ packer.startup(function(use)
   use 'nvim-lua/plenary.nvim' -- Common utilities
   use 'nvim-telescope/telescope.nvim' -- File finder
   use 'nvim-telescope/telescope-file-browser.nvim' -- File finder and grep util
-  use 'kyazdani42/nvim-web-devicons' -- File icons
+  use 'nvim-tree/nvim-web-devicons' -- File icons
   use 'lewis6991/gitsigns.nvim' -- Git helper
+  use 'norcalli/nvim-colorizer.lua' -- Hex color highligth
 
   use 'doums/darcula'
-  use 'tjdevries/colorbuddy.nvim'
-  use 'svrana/neosolarized.nvim'
   use "EdenEast/nightfox.nvim"
-
-  -- Theme switcher
   use 'f-person/auto-dark-mode.nvim'
 
   -- LSP related config
@@ -50,13 +46,10 @@ packer.startup(function(use)
   use('MunifTanjim/prettier.nvim')
 
   use({
-      "iamcco/markdown-preview.nvim",
-      run = function() vim.fn["mkdp#util#install"]() end,
+    "iamcco/markdown-preview.nvim",
+    run = function() vim.fn["mkdp#util#install"]() end,
   })
 
   -- Zen mode
   use 'folke/zen-mode.nvim'
-
-  -- Colorizer
-  use 'norcalli/nvim-colorizer.lua'
 end)
