@@ -22,9 +22,10 @@ end
 
 nvim_lsp.tsserver.setup({
   on_attach = on_attach,
-  filetypes = { "typescript", "typescriptreact", "typescript.tsx" },
+  filetypes = { "javascript", "javascriptreact", "javascript.jsx", "typescript", "typescriptreact", "typescript.tsx", "html" },
   cmd = { "typescript-language-server", "--stdio" },
 })
+
 
 nvim_lsp.pyright.setup({
   on_attach = on_attach,

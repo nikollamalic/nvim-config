@@ -23,9 +23,12 @@ packer.startup(function(use)
   use 'lewis6991/gitsigns.nvim' -- Git helper
   use 'norcalli/nvim-colorizer.lua' -- Hex color highligth
 
+  -- use 'Mofiqul/dracula.nvim'
+  use 'maxmx03/dracula.nvim'
   use 'doums/darcula'
   use "EdenEast/nightfox.nvim"
   use 'f-person/auto-dark-mode.nvim'
+  use { "catppuccin/nvim", as = "catppuccin" }
 
   -- LSP related config
   use 'neovim/nvim-lspconfig' -- LSP
@@ -39,7 +42,7 @@ packer.startup(function(use)
   use 'ray-x/lsp_signature.nvim'
 
   -- LSP UI
-  use 'glepnir/lspsaga.nvim'
+  use "glepnir/lspsaga.nvim"
 
   -- Helpers and linters
   use 'jose-elias-alvarez/null-ls.nvim'

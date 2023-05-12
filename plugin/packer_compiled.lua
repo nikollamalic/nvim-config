@@ -84,6 +84,11 @@ _G.packer_plugins = {
     path = "/Users/nikolamalic/.local/share/nvim/site/pack/packer/start/auto-dark-mode.nvim",
     url = "https://github.com/f-person/auto-dark-mode.nvim"
   },
+  catppuccin = {
+    loaded = true,
+    path = "/Users/nikolamalic/.local/share/nvim/site/pack/packer/start/catppuccin",
+    url = "https://github.com/catppuccin/nvim"
+  },
   ["cmp-buffer"] = {
     loaded = true,
     path = "/Users/nikolamalic/.local/share/nvim/site/pack/packer/start/cmp-buffer",
@@ -115,8 +120,9 @@ _G.packer_plugins = {
     url = "https://github.com/onsails/lspkind-nvim"
   },
   ["lspsaga.nvim"] = {
-    loaded = true,
-    path = "/Users/nikolamalic/.local/share/nvim/site/pack/packer/start/lspsaga.nvim",
+    loaded = false,
+    needs_bufread = false,
+    path = "/Users/nikolamalic/.local/share/nvim/site/pack/packer/opt/lspsaga.nvim",
     url = "https://github.com/glepnir/lspsaga.nvim"
   },
   ["lualine.nvim"] = {
@@ -158,6 +164,11 @@ _G.packer_plugins = {
     loaded = true,
     path = "/Users/nikolamalic/.local/share/nvim/site/pack/packer/start/nvim-cmp",
     url = "https://github.com/hrsh7th/nvim-cmp"
+  },
+  ["nvim-colorizer.lua"] = {
+    loaded = true,
+    path = "/Users/nikolamalic/.local/share/nvim/site/pack/packer/start/nvim-colorizer.lua",
+    url = "https://github.com/norcalli/nvim-colorizer.lua"
   },
   ["nvim-lspconfig"] = {
     loaded = true,

@@ -1,16 +1,30 @@
-local saga = require("lspsaga")
+local lspsaga = require("lspsaga")
 
 local keymap = vim.keymap.set
 
-saga.setup({
-  symbol_in_winbar = { enable = true, respect_root = true },
-  ui = {
-    winblend = 10,
-    border = 'rounded',
-    colors = {
-      normal_bg = '#002b36'
-    }
-  }
+lspsaga.setup({
+  symbol_in_winbar = {
+    enable = true,
+    separator = " 󰡪 ",
+    hide_keyword = true,
+    respect_root = true,
+    color_mode = true,
+  },
+   ui = {
+    -- This option only works in Neovim 0.9
+    title = true,
+    -- Border type can be single, double, rounded, solid, shadow.
+    border = "single",
+    winblend = 0,
+    expand = "",
+    collapse = "",
+    code_action = "💡",
+    incoming = " ",
+    outgoing = " ",
+    hover = ' ',
+    kind = {},
+  },
+  -- ui = { winblend = 10, border = 'rounded', colors = { normal_bg = '#002b36' } }
 })
 
 -- Lsp finder find the symbol definition implement reference
