@@ -24,11 +24,13 @@ packer.startup(function(use)
   use 'norcalli/nvim-colorizer.lua' -- Hex color highligth
 
   -- use 'Mofiqul/dracula.nvim'
+  use { "briones-gabriel/darcula-solid.nvim", requires = "rktjmp/lush.nvim" }
   use 'maxmx03/dracula.nvim'
   use 'doums/darcula'
   use "EdenEast/nightfox.nvim"
   use 'f-person/auto-dark-mode.nvim'
   use { "catppuccin/nvim", as = "catppuccin" }
+  use { "neanias/everforest-nvim" }
 
   -- LSP related config
   use 'neovim/nvim-lspconfig' -- LSP

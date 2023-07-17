@@ -104,6 +104,21 @@ _G.packer_plugins = {
     path = "/Users/nikolamalic/.local/share/nvim/site/pack/packer/start/darcula",
     url = "https://github.com/doums/darcula"
   },
+  ["darcula-solid.nvim"] = {
+    loaded = true,
+    path = "/Users/nikolamalic/.local/share/nvim/site/pack/packer/start/darcula-solid.nvim",
+    url = "https://github.com/briones-gabriel/darcula-solid.nvim"
+  },
+  ["dracula.nvim"] = {
+    loaded = true,
+    path = "/Users/nikolamalic/.local/share/nvim/site/pack/packer/start/dracula.nvim",
+    url = "https://github.com/maxmx03/dracula.nvim"
+  },
+  ["everforest-nvim"] = {
+    loaded = true,
+    path = "/Users/nikolamalic/.local/share/nvim/site/pack/packer/start/everforest-nvim",
+    url = "https://github.com/neanias/everforest-nvim"
+  },
   ["gitsigns.nvim"] = {
     loaded = true,
     path = "/Users/nikolamalic/.local/share/nvim/site/pack/packer/start/gitsigns.nvim",
@@ -120,15 +135,19 @@ _G.packer_plugins = {
     url = "https://github.com/onsails/lspkind-nvim"
   },
   ["lspsaga.nvim"] = {
-    loaded = false,
-    needs_bufread = false,
-    path = "/Users/nikolamalic/.local/share/nvim/site/pack/packer/opt/lspsaga.nvim",
+    loaded = true,
+    path = "/Users/nikolamalic/.local/share/nvim/site/pack/packer/start/lspsaga.nvim",
     url = "https://github.com/glepnir/lspsaga.nvim"
   },
   ["lualine.nvim"] = {
     loaded = true,
     path = "/Users/nikolamalic/.local/share/nvim/site/pack/packer/start/lualine.nvim",
     url = "https://github.com/nvim-lualine/lualine.nvim"
+  },
+  ["lush.nvim"] = {
+    loaded = true,
+    path = "/Users/nikolamalic/.local/share/nvim/site/pack/packer/start/lush.nvim",
+    url = "https://github.com/rktjmp/lush.nvim"
   },
   ["markdown-preview.nvim"] = {
     loaded = true,

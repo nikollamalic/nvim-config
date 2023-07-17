@@ -1,4 +1,5 @@
 local status, nvim_lsp = pcall(require, "lspconfig")
+local configs = require 'lspconfig.configs'
 
 if (not status) then return end
 
@@ -22,7 +23,8 @@ end
 
 nvim_lsp.tsserver.setup({
   on_attach = on_attach,
-  filetypes = { "javascript", "javascriptreact", "javascript.jsx", "typescript", "typescriptreact", "typescript.tsx", "html" },
+  filetypes = { "javascript", "javascriptreact", "javascript.jsx", "typescript", "typescriptreact", "typescript.tsx",
+    "html" },
   cmd = { "typescript-language-server", "--stdio" },
 })
 
@@ -31,29 +33,17 @@ nvim_lsp.pyright.setup({
   on_attach = on_attach,
 })
 
-nvim_lsp.solang.setup({
+nvim_lsp.dartls.setup({
   on_attach = on_attach,
 })
 
-nvim_lsp.solidity.setup({
-  on_attach = on_attach,
-  settings = {
-    -- example of global remapping
-    solidity = { includePath = '', remapping = { ["@OpenZeppelin/"] = 'OpenZeppelin/openzeppelin-contracts@4.6.0/' } }
+configs.solidity = {
+  default_config = {
+    cmd = {'nomicfoundation-solidity-language-server', '--stdio'},
+    filetypes = { 'solidity' },
+    root_dir = nvim_lsp.util.find_git_ancestor,
+    single_file_support = true,
   },
-})
-
-nvim_lsp.lua_ls.setup {
-  on_attach = on_attach,
-  settings = {
-    Lua = {
-      diagnostics = {
-        globals = { 'vim' }
-      },
-
-      workspace = {
-        library = vim.api.nvim_get_runtime_file("", true)
-      }
-    }
-  }
 }
+
+nvim_lsp.solidity.setup {on_attach = on_attach}

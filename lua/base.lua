@@ -38,3 +38,5 @@ vim.api.nvim_create_autocmd("InsertLeave", {
 })
 
 vim.opt.formatoptions:append { 'r' }
+
+vim.g.copilot_node_command = "~/.nvm/versions/node/v16.10.0/bin/node"
