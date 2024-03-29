@@ -23,6 +23,17 @@ packer.startup(function(use)
   use 'lewis6991/gitsigns.nvim' -- Git helper
   use 'norcalli/nvim-colorizer.lua' -- Hex color highligth
 
+  use {
+    'akinsho/flutter-tools.nvim',
+    requires = {
+      'nvim-lua/plenary.nvim',
+      'stevearc/dressing.nvim', -- optional for vim.ui.select
+    },
+  }
+  use {
+    'wthollingsworth/pomodoro.nvim',
+    requires = 'MunifTanjim/nui.nvim'
+}
   -- use 'Mofiqul/dracula.nvim'
   use { "briones-gabriel/darcula-solid.nvim", requires = "rktjmp/lush.nvim" }
   use 'maxmx03/dracula.nvim'

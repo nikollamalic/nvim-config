@@ -14,6 +14,11 @@ prettier.setup({
     "scss",
     "typescript",
     "typescriptreact",
+    "solidity",
     "yaml",
+  },
+  cli_options = {
+    tab_width = 2,
+    use_tabs = false,
   },
 })

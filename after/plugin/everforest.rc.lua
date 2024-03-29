@@ -4,7 +4,7 @@ require("everforest").setup({
   background = "medium",
   ---How much of the background should be transparent. 2 will have more UI
   ---components be transparent (e.g. status line background)
-  transparent_background_level = 0,
+  transparent_background_level = 2,
   ---Whether italics should be used for keywords and more.
   italics = true,
   ---Disable italic fonts for comments. Comments are in italics by default, set

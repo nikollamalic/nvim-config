@@ -10,7 +10,10 @@ auto_dark_mode.setup({
     --  catppuccin-macchiato,
     --  catppuccin-mocha
     --  dracula | dracula-soft
-    vim.cmd('colorscheme dracula-soft')
+    --  everforest
+    --  dracula
+    -- vim.cmd('colorscheme dracula')
+    vim.cmd('colorscheme dracula')
   end,
   set_light_mode = function()
     vim.api.nvim_set_option('background', 'light')

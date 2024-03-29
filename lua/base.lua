@@ -40,3 +40,11 @@ vim.api.nvim_create_autocmd("InsertLeave", {
 vim.opt.formatoptions:append { 'r' }
 
 vim.g.copilot_node_command = "~/.nvm/versions/node/v16.10.0/bin/node"
+
+vim.opt.signcolumn = 'yes'
+
+vim.api.nvim_create_autocmd("ExitPre", {
+  group = vim.api.nvim_create_augroup("Exit", { clear = true }),
+  command = "set guicursor=a:ver90",
+  desc = "Set cursor back to beam when leaving Neovim."
+})
