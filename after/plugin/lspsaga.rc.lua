@@ -15,6 +15,7 @@ lspsaga.setup({
     methods = {
       imd = 'textDocument/implementation',
       def = 'textDocument/definition',
+      ref = 'textDocument/references',
     }
 
   },

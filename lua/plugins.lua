@@ -21,6 +21,7 @@ packer.startup(function(use)
   use 'nvim-telescope/telescope-file-browser.nvim' -- File finder and grep util
   use 'nvim-tree/nvim-web-devicons' -- File icons
   use 'lewis6991/gitsigns.nvim' -- Git helper
+  use 'lewis6991/hover.nvim'
   use 'norcalli/nvim-colorizer.lua' -- Hex color highligth
 
   use {

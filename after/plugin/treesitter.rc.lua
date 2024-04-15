@@ -11,7 +11,7 @@ ts.setup {
     disable = {},
   },
   ensure_installed = {
-    'tsx', 'lua', 'json', 'css', 'svelte'
+    'tsx', 'lua', 'json', 'css', 'svelte', 'solidity'
   },
   autotag = {
     enable = true

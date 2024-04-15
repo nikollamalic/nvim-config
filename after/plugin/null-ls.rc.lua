@@ -13,13 +13,10 @@ local lsp_formatting = function(bufnr)
   })
 end
 
-null_ls.builtins.formatting.prettier.with({
-  extra_filetypes = { "solidity" },
-})
-
-null_ls.setup{
+null_ls.setup {
   sources = {
     null_ls.builtins.formatting.prettierd,
+    null_ls.builtins.formatting.forge_fmt.with { },
   },
   on_attach = function(client, bufnr)
     if client.supports_method("textDocument/formatting") then
