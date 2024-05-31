@@ -1,6 +1,6 @@
 local status, dracula = pcall(require, 'dracula')
 
-if (status) then return end
+if (not status) then return end
 
 dracula.setup {
   soft = true,

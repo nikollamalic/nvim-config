@@ -9,5 +9,5 @@ if (not status_lsp_config) then return end
 mason.setup {}
 
 lspconfig.setup {
-  ensure_installed = { "tsserver", "solidity" }
+  ensure_installed = { "tsserver", "solidity", "python" }
 }

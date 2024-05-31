@@ -23,7 +23,7 @@ end
 
 nvim_lsp.tsserver.setup({ on_attach = on_attach,
   filetypes = { "javascript", "javascriptreact", "javascript.jsx", "typescript", "typescriptreact", "typescript.tsx",
-    "html" }, cmd = { "typescript-language-server", "--stdio" }, })
+    "html", "svelte" }, cmd = { "typescript-language-server", "--stdio" }, })
 
 -- nvim_lsp.biome.setup { on_attach = on_attach, root_dir = require("lspconfig.util").root_pattern("package.json", "tsconfig.json", "jsconfig.json", ".git") }
 
@@ -40,4 +40,28 @@ nvim_lsp.lua_ls.setup({
 nvim_lsp.dartls.setup({ on_attach = on_attach, })
 
 -- configures lsp for solidity and enables foundry libs
-nvim_lsp.solidity.setup({ on_attach = on_attach, cmd = { 'nomicfoundation-solidity-language-server', '--stdio' }, filetypes = { 'solidity' }, root_dir = require("lspconfig.util").root_pattern "foundry.toml", single_file_support = false, })
+nvim_lsp.solidity.setup({ on_attach = on_attach, cmd = { 'nomicfoundation-solidity-language-server', '--stdio' },
+  filetypes = { 'solidity' }, root_dir = require("lspconfig.util").root_pattern "foundry.toml",
+  single_file_support = false, })
+
+nvim_lsp.pyright.setup({
+  on_attach = on_attach,
+})
+
+nvim_lsp.rust_analyzer.setup({
+  on_attach = on_attach,
+  settings = {
+    ["rust-analyzer"] = {
+      assist = {
+        importMergeBehavior = "last",
+        importPrefix = "by_self",
+      },
+      cargo = {
+        loadOutDirsFromCheck = true,
+      },
+      procMacro = {
+        enable = true,
+      },
+    },
+  },
+})

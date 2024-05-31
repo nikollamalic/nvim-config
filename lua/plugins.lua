@@ -11,7 +11,6 @@ packer.startup(function(use)
   use 'nvim-lualine/lualine.nvim' -- Status line
   use 'windwp/nvim-autopairs' -- Autoclosing HTML tags
   use 'windwp/nvim-ts-autotag' -- Auto-update of HTML tags
-  use 'folke/tokyonight.nvim' -- Color scheme Purplish
   use {
     'nvim-treesitter/nvim-treesitter', -- File explorer
     run = ":TSUpdate"
@@ -24,6 +23,8 @@ packer.startup(function(use)
   use 'lewis6991/hover.nvim'
   use 'norcalli/nvim-colorizer.lua' -- Hex color highligth
 
+  use "stevearc/dressing.nvim"
+
   use {
     'akinsho/flutter-tools.nvim',
     requires = {
@@ -34,7 +35,7 @@ packer.startup(function(use)
   use {
     'wthollingsworth/pomodoro.nvim',
     requires = 'MunifTanjim/nui.nvim'
-}
+  }
   -- use 'Mofiqul/dracula.nvim'
   use { "briones-gabriel/darcula-solid.nvim", requires = "rktjmp/lush.nvim" }
   use 'maxmx03/dracula.nvim'
@@ -43,6 +44,7 @@ packer.startup(function(use)
   use 'f-person/auto-dark-mode.nvim'
   use { "catppuccin/nvim", as = "catppuccin" }
   use { "neanias/everforest-nvim" }
+  use "rebelot/kanagawa.nvim"
 
   -- LSP related config
   use 'neovim/nvim-lspconfig' -- LSP
