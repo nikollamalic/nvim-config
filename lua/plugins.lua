@@ -68,7 +68,12 @@ packer.startup(function(use)
     "iamcco/markdown-preview.nvim",
     run = function() vim.fn["mkdp#util#install"]() end,
   })
-
+ use { "tobi-wan-kenobi/zengarden",
+    requires = "rktjmp/lush.nvim",
+    config = function()
+      vim.cmd [[ colorscheme zengarden ]]
+    end
+  }
   -- Zen mode
   use 'folke/zen-mode.nvim'
 end)

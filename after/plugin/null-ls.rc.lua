@@ -15,9 +15,8 @@ end
 
 null_ls.setup {
   sources = {
-    null_ls.builtins.formatting.prettierd,
-    null_ls.builtins.formatting.forge_fmt.with { },
-    null_ls.builtins.formatting.stylua.with { },
+    null_ls.builtins.formatting.forge_fmt.with {},
+    null_ls.builtins.formatting.stylua.with {},
     null_ls.builtins.formatting.black,
   },
   on_attach = function(client, bufnr)

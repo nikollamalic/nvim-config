@@ -12,7 +12,7 @@ auto_dark_mode.setup({
     --  dracula | dracula-soft
     --  everforest
     --  dracula
-    vim.cmd('colorscheme kanagawa')
+    vim.cmd('colorscheme zengarden')
     -- vim.cmd('colorscheme kanagawa')
   end,
   set_light_mode = function()

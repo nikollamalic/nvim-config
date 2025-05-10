@@ -8,3 +8,5 @@ require('themes')
 vim.diagnostic.config({
   virtual_text = true
 })
+
+
